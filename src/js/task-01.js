@@ -1,8 +1,16 @@
-const numberEl = document.querySelectorAll('.item');
+const categoriesEl = document.getElementById('categories').children.length;
+console.log('Number of categories:', categoriesEl);
 
-console.log('Number of categories:', numberEl.length);
+const categoryItemEl = document.querySelectorAll('h2');
+categoryItemEl.forEach((item) => {
+    console.log('Category: ', item.textContent);
+    console.log('Elements: ', item.nextElementSibling.children.length);
+});
+    
 
-const categoryEl = document.querySelectorAll('h2');
 
-console.log(categoryEl)
-//console.log('Category: ', categoryEl.textContent)
+ 
+
+
+
+
